@@ -28,7 +28,7 @@ AWStats 是一个开源的网站分析报告工具，可以生成强大的网站
 
 1. `sudo /etc/init.d/apache2 restart`
 
- 
+
 
 #### 配置 AWStats
 
@@ -36,7 +36,7 @@ AWStats 是一个开源的网站分析报告工具，可以生成强大的网站
 
 要完成此步，你可以通过复制 AWStats 的默认配置文件来配置你要统计的域。
 
-1. `sudo cp/etc/awstats/awstats.conf /etc/awstats/awstats.test.com.conf`
+1. `sudo cp /etc/awstats/awstats.conf /etc/awstats/awstats.test.com.conf`
 
 现在，你需要在配置文件中做一些修改：
 
@@ -56,7 +56,7 @@ AWStats 是一个开源的网站分析报告工具，可以生成强大的网站
 
 修改配置文件后，你需要用服务器的当前日志建立初步统计。你可以这样做：
 
-1. `sudo/usr/lib/cgi-bin/awstats.pl -config=test.com -update`
+1. `sudo /usr/lib/cgi-bin/awstats.pl -config=test.com -update`
 
 输出会是这个样子:
 
@@ -72,9 +72,8 @@ AWStats 是一个开源的网站分析报告工具，可以生成强大的网站
 
 运行以下命令来完成此步:
 
-1. `sudo cp-r /usr/lib/cgi-bin /var/www/html/`
-2. `sudo chown www-data:www-data /var/www/html/cgi-bin/`
-3. `sudo chmod-R 755/var/www/html/cgi-bin/`
+1. `sudo cp -r /usr/lib/cgi-bin /var/www/html/`
+2. `sudo chmod -R 755/var/www/html/cgi-bin/`
 
 
 
